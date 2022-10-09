@@ -1,6 +1,15 @@
 import React from "react";
 import "./App.css";
+import Editor from "../Editor/editor.js";
+import Preview from "../Preview/preview.js";
 
-class Editor extends React.Component {}
+function App() {
+  return (
+    <div id="App">
+      <Editor />
+      <Preview />
+    </div>
+  );
+}
 
-export default Editor;
+export default App;

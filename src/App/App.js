@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import Editor from "../Editor/editor.js";
-import Preview from "../Preview/preview.js";
+import Editor from "../Editor/Editor.js";
+import Preview from "../Preview/Preview.js";
 
 function App() {
   return (

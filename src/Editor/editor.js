@@ -1,4 +1,5 @@
 import React from "react";
+import "./Editor.css";
 
 class Editor extends React.Component {
   constructor(props) {

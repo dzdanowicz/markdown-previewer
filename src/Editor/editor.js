@@ -7,12 +7,23 @@ class Editor extends React.Component {
     this.state = {
       text: "",
     };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      text: event.target.value,
+    });
   }
 
   render() {
     return (
       <div className="container">
-        <textarea id="editor"></textarea>
+        <textarea
+          id="editor"
+          value={this.state.text}
+          onChange={this.handleChange}
+        ></textarea>
       </div>
     );
   }

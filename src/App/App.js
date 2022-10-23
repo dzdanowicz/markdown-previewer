@@ -25,7 +25,7 @@ class App extends React.Component {
           handleEditorChange={this.handleEditorChange}
           text={this.state.text}
         />
-        <Preview />
+        <Preview text={this.state.text} />
       </div>
     );
   }

@@ -9,12 +9,22 @@ class App extends React.Component {
     this.state = {
       text: "",
     };
+    this.handleEditorChange = this.handleEditorChange.bind(this);
+  }
+
+  handleEditorChange(editorText) {
+    this.setState({
+      text: editorText,
+    });
   }
 
   render() {
     return (
       <div id="App">
-        <Editor />
+        <Editor
+          handleEditorChange={this.handleEditorChange}
+          text={this.state.text}
+        />
         <Preview />
       </div>
     );

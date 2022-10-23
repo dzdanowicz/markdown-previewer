@@ -8,9 +8,7 @@ class Editor extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({
-      text: event.target.value,
-    });
+    this.props.handleEditorChange(event.target.value);
   }
 
   render() {
@@ -18,7 +16,7 @@ class Editor extends React.Component {
       <div className="container">
         <textarea
           id="editor"
-          value={this.state.text}
+          value={this.props.text}
           onChange={this.handleChange}
         ></textarea>
       </div>

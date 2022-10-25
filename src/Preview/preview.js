@@ -1,6 +1,7 @@
 import React from "react";
 import { marked } from "marked";
 import "./Preview.css";
+import "github-markdown-css";
 
 class Preview extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Preview extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container markdown-body">
         <div id="preview"></div>
       </div>
     );

@@ -1,3 +1,9 @@
 #App {
   display: flex;
 }
+
+@media (prefers-color-scheme: dark) {
+  #App {
+    background-color: #0d1117;
+  }
+}

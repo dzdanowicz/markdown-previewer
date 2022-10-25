@@ -16,7 +16,7 @@ class Preview extends React.Component {
 
   render() {
     return (
-      <div className="container markdown-body">
+      <div id="previewContainer" className="markdown-body">
         <div id="preview"></div>
       </div>
     );

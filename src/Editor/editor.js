@@ -13,7 +13,7 @@ class Editor extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div id="editorContainer">
         <textarea
           id="editor"
           value={this.props.text}

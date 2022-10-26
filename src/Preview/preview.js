@@ -9,10 +9,6 @@ marked.setOptions({
 });
 
 class Preview extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidUpdate() {
     document.getElementById("preview").innerHTML = marked.parse(
       this.props.text

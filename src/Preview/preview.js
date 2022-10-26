@@ -3,6 +3,11 @@ import { marked } from "marked";
 import "./Preview.css";
 import "github-markdown-css";
 
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+});
+
 class Preview extends React.Component {
   constructor(props) {
     super(props);

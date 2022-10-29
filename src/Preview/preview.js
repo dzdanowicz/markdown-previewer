@@ -8,11 +8,17 @@ marked.setOptions({
   breaks: true,
 });
 
+function update(text) {
+  document.getElementById("preview").innerHTML = marked.parse(text);
+}
+
 class Preview extends React.Component {
   componentDidUpdate() {
-    document.getElementById("preview").innerHTML = marked.parse(
-      this.props.text
-    );
+    update(this.props.text);
+  }
+
+  componentDidMount() {
+    update(this.props.text);
   }
 
   render() {
